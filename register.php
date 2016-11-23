@@ -48,11 +48,12 @@ if (isset($_POST['code'])) {
 elseif(isset($_POST['submit']))
 {
 	include './auth.php';
-	include './way2sms/sendsms.php';
+	include 'your sms gateway script';
 	$_SESSION['code']=getToken(7);
 	$_SESSION['name']=$_POST['name'];
 	$_SESSION['mob']=$_POST['mob'];
 	$_SESSION['pass']=$_POST['pass'];
+	// send the code to user's phone
 	send($_SESSION['mob'],$_SESSION['code']);
 	echo $header;
 	echo "<h4>Enter the verification code</h4>";
