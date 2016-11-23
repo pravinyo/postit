@@ -12,7 +12,7 @@ if(isset($_REQUEST['logout']))
 <html>
 <head>
 	<title>POSTIT LOGIN | welcome</title>
-	<meta name="google-signin-client_id" content="994997772322-en7gops3mal5hg7jruijjfh43ev48v0c.apps.googleusercontent.com">
+	<meta name="google-signin-client_id" content="your-app-id.apps.googleusercontent.com">
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<script type="text/javascript" src="./js/jquery.js"></script>
 	<script type="text/javascript" src="./js/jquery.leanModal.min.js"></script>
