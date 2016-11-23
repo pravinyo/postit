@@ -16,7 +16,7 @@ if(isset($_REQUEST['token']))
 	$tokenIssuer = $userInfoArray['issuer'];   
 	$isVerified=$userInfoArray['email_verified']; 
 	$data['audience']=$tokenAudience;
-	$audience="994997772322-en7gops3mal5hg7jruijjfh43ev48v0c.apps.googleusercontent.com";
+	$audience="your-app-id.apps.googleusercontent.com";
 	if($tokenAudience==$audience)
 		$data['status']=$isVerified;
 	$_SESSION['auth']=1;
@@ -35,7 +35,11 @@ elseif (isset($_REQUEST['num']) && isset($_REQUEST['pass'])) {
 		$data['status']=1;
 		$index='temp_code_verification_' . $number;
 		$_SESSION[$index]=getToken(7);
-		include './way2sms/sendsms.php';
+		/*
+		*	write your own sms gateway script
+		*/
+		// include 'your sms-script.php';
+		// send to toh sms handler code
 		$response=send($number,$_SESSION[$index]);
 		if($response)
 			$data['code']=$index;
