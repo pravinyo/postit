@@ -4,14 +4,15 @@
 
 #Live website
  you can see the live demonstration by visiting following website:
-  http://proshop.likesyou.org
+ <a href="http://proshop.likesyou.org" target="_blank">Visit link</a>
   
 #Technology used:
-  Google auth v2
-  Ajax
-  JQuery
-  HTML
-  CSS
-  PHP
-  MySQL
-  SMS API
+  <ul>
+  <li>Google auth v2</li>
+  <li>Ajax</li>
+  <li>JQuery</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>PHP</li>
+  <li>MySQL</li>
+  <li>SMS API</li>
